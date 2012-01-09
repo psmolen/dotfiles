@@ -1,9 +1,10 @@
 # Unix
+alias cat="pygmentize -g"
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
 alias ...='../..'
-alias l='ls'
+alias ls='ls++'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias -g G='| grep'

@@ -45,6 +45,8 @@ setopt histignoredups
 
 # keep TONS of history
 export HISTSIZE=4096
+export SAVEHIST=4096
+export HISTFILE=~/.history
 
 # look for ey config in project dirs
 export EYRC=./.eyrc
@@ -63,3 +65,8 @@ setopt CORRECT CORRECT_ALL
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
+
+#No Beep
+setopt no_beep
+
+export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby/1.9.2-p290/bin:$PATH"
