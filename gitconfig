@@ -2,3 +2,8 @@
   default = tracking
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[color]
+	diff = always
+[user]
+	name = pat
+	email = pat@blueye.com
