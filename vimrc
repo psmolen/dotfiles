@@ -6,6 +6,8 @@ set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
+set fileformats+=dos
+set pastetoggle=<F2>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -33,10 +35,7 @@ augroup END
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
-set expandtab
-
-" Display extra whitespace
-set list listchars=tab:»·,trail:·
+"set expandtab "soft-tabs
 
 " Local config
 if filereadable(".vimrc.local")
@@ -49,7 +48,6 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme elflord
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -75,11 +73,16 @@ command! -nargs=+ Cuc :!ack --no-heading --no-break <q-args> | cut -d':' -f1,2 |
 
 
 " Get off my lawn
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <Left> :echoe "  Use h  "<CR>
+nnoremap <Right> :echoe "  Use l  "<CR>
+nnoremap <Up> :echoe "  Use k  "<CR>
+nnoremap <Down> :echoe "  Use j  "<CR>
+
+inoremap        (  ()<Left>
+inoremap <expr> )  strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
+" NERDTree old arrows
+let NERDTreeDirArrows=0
