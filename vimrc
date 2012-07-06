@@ -35,7 +35,7 @@ augroup END
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
-"set expandtab "soft-tabs
+set expandtab "soft-tabs
 
 " Local config
 if filereadable(".vimrc.local")
@@ -86,3 +86,7 @@ let g:html_indent_tags = 'li\|p'
 
 " NERDTree old arrows
 let NERDTreeDirArrows=0
+
+set mouse=a
+map <ScrollWheelUp> <C-Y>
+map <ScrollWheelDown> <C-E>

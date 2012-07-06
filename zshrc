@@ -69,4 +69,4 @@ setopt EXTENDED_GLOB
 #No Beep
 setopt no_beep
 
-export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby/1.9.2-p290/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby:$PATH"
