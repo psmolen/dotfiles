@@ -69,4 +69,16 @@ setopt EXTENDED_GLOB
 #No Beep
 setopt no_beep
 
-export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby/1.9.2-p290/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby:$PATH"
+export CLICOLOR=1
+export DISPLAY=1
+
+#load colors
+autoload colors && colors
+for COLOR in RED GREEN YELLOW BLUE MAGENTA CYAN BLACK WHITE; do
+	eval $COLOR='%{$fg_no_bold[${(L)COLOR}]%}'  #wrap colours between %{ %} to avoid weird gaps in autocomplete
+	eval BOLD_$COLOR='%{$fg_bold[${(L)COLOR}]%}'
+done
+eval RESET='$reset_color'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
