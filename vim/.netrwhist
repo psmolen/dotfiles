@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/pat/dev/solidviper'
-let g:netrw_dirhist_2='/private/etc/apache2/other'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/pat/dev/tmux-powerline/segments'
+let g:netrw_dirhist_2='/Users/pat/dev/blueye/bottlestock-api'
+let g:netrw_dirhist_3='/Users/pat/dev/tmux-powerline'
+let g:netrw_dirhist_4='/Users/pat/dev/tmux-powerline/segments'
+let g:netrw_dirhist_5='/Users/pat/dev/tmux-powerline'
+let g:netrw_dirhist_6='/Users/pat/dev/skeleton'
