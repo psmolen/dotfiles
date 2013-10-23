@@ -7,3 +7,5 @@
 [user]
 	name = pat
 	email = pat@blueye.com
+[mergetool]
+	keepBackup = true
