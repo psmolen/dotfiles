@@ -43,6 +43,14 @@ export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 # ignore duplicate history entries
 setopt histignoredups
 
+# Show contents of directory after cd-ing into it
+chpwd() {
+  ls
+}
+
+# let me use ctrl+s
+stty -ixon
+
 # keep TONS of history
 export HISTSIZE=4096
 export SAVEHIST=4096
@@ -70,3 +78,11 @@ setopt EXTENDED_GLOB
 setopt no_beep
 
 export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/Cellar/ruby:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export PERL_LOCAL_LIB_ROOT="$PERL_LOCAL_LIB_ROOT:/Users/pat/.perl5";
+export PERL_MB_OPT="--install_base /Users/pat/.perl5";
+export PERL_MM_OPT="INSTALL_BASE=/Users/pat/.perl5";
+export PERL5LIB="/Users/pat/.perl5/lib/perl5:$PERL5LIB";
+export PATH="/Users/pat/.perl5/bin:$PATH";

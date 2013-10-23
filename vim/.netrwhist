@@ -1,5 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/pat/public_html/abs/core/lib/classes'
-let g:netrw_dirhist_2='/home/pat/public_html/abs/core/lib/actions'
-let g:netrw_dirhist_3='/home/pat/public_html/abs'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/pat/dev/solidviper'
+let g:netrw_dirhist_2='/private/etc/apache2/other'
