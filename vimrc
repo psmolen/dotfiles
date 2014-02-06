@@ -101,6 +101,12 @@ map <ScrollWheelDown> <C-E>
 map <C-S> <esc>:w<CR>
 imap <C-S> <esc>:w<CR>
 
+""""
+" powerline
+""""
+set rtp+=/Users/pat/dev/powerline/powerline/bindings/vim
+set encoding=utf-8
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Test-running stuff
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
