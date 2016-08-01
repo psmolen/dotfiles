@@ -6,6 +6,6 @@
 	diff = always
 [user]
 	name = pat
-	email = pat@blueye.com
+	email = mail@example.com
 [mergetool]
 	keepBackup = true
